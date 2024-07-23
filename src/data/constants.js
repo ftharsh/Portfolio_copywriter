@@ -10,7 +10,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/ftharsh",
   resume:
-    "https://drive.google.com/file/d/1KM6j3k2NEkx2Rxq_XBeEPtrjRcHynF6D/view",
+    "https://drive.google.com/file/d/1vw9lkf_kaFVNsNaz6glywyqQMx4sdpiP/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/harshvardhan-hari-6a5176253/",
   twitter: "https://x.com/Haridev22",
   insta: "https://www.instagram.com/ft.harxsh_22/?hl=en",
