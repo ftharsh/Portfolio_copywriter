@@ -8,7 +8,6 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import ExperienceCard from "../Cards/ExperienceCard";
 import { experiences } from "../../data/constants";
-import { leadershipexp } from "../../data/constants";
 
 const Container = styled.div`
   display: flex;
@@ -88,30 +87,6 @@ const index = () => {
                 <TimelineSeparator>
                   <TimelineDot variant="outlined" color="secondary" />
                   {index !== experiences.length - 1 && (
-                    <TimelineConnector style={{ background: "#854CE6" }} />
-                  )}
-                </TimelineSeparator>
-                <TimelineContent sx={{ py: "12px", px: 2 }}>
-                  <ExperienceCard experience={experience} />
-                </TimelineContent>
-              </TimelineItem>
-            ))}
-          </Timeline>
-        </TimelineSection>
-      </Wrapper>
-      <Wrapper>
-        <Title>Leadership Experiences</Title>
-        <Desc>
-          My work experience as a software engineer and working on different
-          companies and projects.
-        </Desc>
-        <TimelineSection>
-          <Timeline>
-            {leadershipexp.map((experience, index) => (
-              <TimelineItem>
-                <TimelineSeparator>
-                  <TimelineDot variant="outlined" color="secondary" />
-                  {index !== leadershipexp.length - 1 && (
                     <TimelineConnector style={{ background: "#854CE6" }} />
                   )}
                 </TimelineSeparator>

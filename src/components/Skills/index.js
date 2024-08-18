@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { skills } from "../../data/constants";
+import { skills, skills3, skills2 } from "../../data/constants";
 
 const Container = styled.div`
   display: flex;
@@ -24,7 +24,17 @@ const Wrapper = styled.div`
     flex-direction: column;
   }
 `;
-
+export const Toptitle = styled.div`
+  font-size: 70px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 20px;
+  color: ${({ theme }) => theme.text_primary};
+  @media (max-width: 768px) {
+    margin-top: 12px;
+    font-size: 32px;
+  }
+`;
 export const Title = styled.div`
   font-size: 42px;
   text-align: center;
@@ -120,13 +130,47 @@ const Skills = () => {
   return (
     <Container id="skills">
       <Wrapper>
-        <Title>Skills</Title>
+        <Toptitle>Skills</Toptitle>
         <Desc>
           Here are some of my skills on which I have been working on for the
           past 4 years.
         </Desc>
+        <Title>Content Creation</Title>
+
         <SkillsContainer>
           {skills.map((skill) => (
+            <Skill>
+              <SkillTitle>{skill.title}</SkillTitle>
+              <SkillList>
+                {skill.skills.map((item) => (
+                  <SkillItem>
+                    <SkillImage src={item.image} />
+                    {item.name}
+                  </SkillItem>
+                ))}
+              </SkillList>
+            </Skill>
+          ))}
+        </SkillsContainer>
+        <Title>Marketing Strategy</Title>
+        <SkillsContainer>
+          {skills2.map((skill) => (
+            <Skill>
+              <SkillTitle>{skill.title}</SkillTitle>
+              <SkillList>
+                {skill.skills.map((item) => (
+                  <SkillItem>
+                    <SkillImage src={item.image} />
+                    {item.name}
+                  </SkillItem>
+                ))}
+              </SkillList>
+            </Skill>
+          ))}
+        </SkillsContainer>
+        <Title>Performance Analysis</Title>
+        <SkillsContainer>
+          {skills3.map((skill) => (
             <Skill>
               <SkillTitle>{skill.title}</SkillTitle>
               <SkillList>

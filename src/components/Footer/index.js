@@ -109,7 +109,7 @@ function Footer() {
             <InstagramIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>&copy; 2023 Harshvardhan . All rights reserved.</Copyright>
+        <Copyright>&copy; 2023 Apurv Vikram . All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );

@@ -35,7 +35,7 @@ const Navbar = () => {
               cursor: "pointer",
             }}
           >
-            <DiCssdeck size="3rem" /> <Span>Har.xsh</Span>
+            <DiCssdeck size="3rem" /> <Span>Vik.ram</Span>
           </a>
         </NavLogo>
         <MobileIcon>
@@ -50,11 +50,10 @@ const Navbar = () => {
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#experience">Experience</NavLink>
           <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#education">Education</NavLink>
         </NavItems>
         <ButtonContainer>
           <GitHubButton href={Bio.github} target="_blank">
-            Github Profile
+            Blog Profile
           </GitHubButton>
         </ButtonContainer>
         {isOpen && (
